@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+```
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #193b2d, #2575fc);
+    }
+
+    form {
+        width: 350px;
+    }
+
+    fieldset {
+        border: none;
+        border-radius: 20px;
+        padding: 35px;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    legend {
+        background: #ff4b2b;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 20px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #0a3713;
+        box-shadow: 0 0 8px rgba(18, 45, 35, 0.3);
+    }
+
+    button {
+        padding: 12px 22px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: 0.3s;
+    }
+
+    button[type="submit"] {
+        background: #5c00b8;
+    }
+
+    button[type="reset"] {
+        background: #e84393;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<form>
+    <fieldset>
+        <legend>Login</legend>
+
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+</form>
+
+<script src="./Login.js"></script>
+```
+
+</body>
+</html>
